@@ -5,44 +5,99 @@ body {
   display: flex;
   flex-flow: column nowrap;
 }
-#hero, footer {
-  background-color: #1f2937;
+
+#hero .nav-links {
+  a:link, a:visited {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    text-decoration: underline;
+  }
 }
 
-h1 {
+#hero, footer {
+  display: flex;
+  background-color: #1f2937;
+  /* flex-wrap: column nowrap; */
+}
+
+#hero .main-text {
   font-size: 48px;
-  font-weight: 900;
+    font-weight: 900;
   color: #f9faf8;
 }
 
-.hero-logo {
+#hero .logo {
   font-size: 24px;
   color: #f9faf8;
 }
 
-header a:link, a:visited, .hero-secondary {
+#hero .secondary-text {
   font-size: 18px;
   color: #e5e7eb;
-  text-decoration: none;
 }
-header a:hover, a:active {
-  text-decoration: underline;
+
+header {
+  display: inherit;
+  flex-flow: default;
+  justify-content: space-between;
 }
 
 button {
   background-color: #3882f6;
 }
+
+#information .info {
+  display: inherit;
+  width: 150px;
+}
+#information img {
+  display: inherit;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 5px;
+}
+
 #information {
   display: flex;
-  font-size: 36px;
   color: #1f2937;
+  flex-flow: column nowrap;
+}
+
+#information .header {
+  display: inherit;
+  color: #1f2937;
+  font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
 }
-#quote {
+
+#information .container {
+  display: inherit;
+  justify-content: space-around;
+}
+
+#testimonial {
+  display: flex;
+  color:#1f2937;
   background-color: #e5e7eb;
-}
-.testimonial {
   font-size: 36px;
-  color: #1f2937;
   font-weight: 300;
+  flex-flow: column wrap;
+  padding: 5% 25%;
 }
+
+#testimonial .author {
+  display: inherit;
+  justify-content: flex-end;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+
+
