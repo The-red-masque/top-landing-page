@@ -51,7 +51,11 @@ button {
 
 #information .info {
   display: inherit;
-  width: 150px;
+  width: 200px;
+  gap: 36px;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
 }
 #information img {
   display: inherit;
@@ -80,6 +84,7 @@ button {
 #information .container {
   display: inherit;
   justify-content: space-around;
+  padding: 25px 200px;
 }
 
 #testimonial {
