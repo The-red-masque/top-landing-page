@@ -4,7 +4,6 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-flow: column nowrap;
-  padding: 
 }
 
 header {
@@ -39,21 +38,41 @@ header .nav-links {
   display: flex;
   background-color: #1f2937;
   padding: 25px 200px;
+  flex-flow: row wrap;
 }
-
+#hero img {
+  display:inherit;
+  justify-content:center;
+  align-self: right;
+  padding:25px 100px;
+  flex-grow: 2;
+}
 #hero .main-text {
+  display: inherit;
   font-size: 48px;
-    font-weight: 900;
+  font-weight: 900;
   color: #f9faf8;
 }
 
 #hero .secondary-text {
+  display: inherit;
   font-size: 18px;
   color: #e5e7eb;
+}
+#hero .container {
+  display:inherit;
+  flex-flow: column nowrap;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+  flex-grow: 1;
 }
 
 button {
   background-color: #3882f6;
+  color: #f9faf8;
+  margin: 10px;
+  padding: 15px;
 }
 
 #information .info {
@@ -110,7 +129,11 @@ button {
   font-size: 36px;
   font-weight: 600;
 }
-
+#call-to-action {
+  background-color: #3882f6;
+  margin: 50px 200px;
+  color:#f9faf8;
+}
 footer {
   display: flex;
   color: #f9faf8;
