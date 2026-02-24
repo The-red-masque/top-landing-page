@@ -6,7 +6,22 @@ body {
   flex-flow: column nowrap;
 }
 
-#hero .nav-links {
+header {
+  display: flex;
+  flex-flow: default;
+  justify-content: space-between;
+  background-color: #1f2937;
+  padding: 24px;
+}
+header ul {display:inherit;list-style-type:none;gap:10px;justify-content: center;}
+header .logo {
+  font-size: 24px;
+  color: #f9faf8;
+  align-self:center;
+  justify-content: center;
+}
+
+header .nav-links {
   a:link, a:visited {
     font-size: 18px;
     color: #e5e7eb;
@@ -17,10 +32,9 @@ body {
   }
 }
 
-#hero, footer {
+#hero {
   display: flex;
   background-color: #1f2937;
-  /* flex-wrap: column nowrap; */
 }
 
 #hero .main-text {
@@ -29,20 +43,9 @@ body {
   color: #f9faf8;
 }
 
-#hero .logo {
-  font-size: 24px;
-  color: #f9faf8;
-}
-
 #hero .secondary-text {
   font-size: 18px;
   color: #e5e7eb;
-}
-
-header {
-  display: inherit;
-  flex-flow: default;
-  justify-content: space-between;
 }
 
 button {
@@ -104,5 +107,7 @@ button {
   font-weight: 600;
 }
 
-
-
+footer {
+  display: flex;
+  background-color: #1f2937;
+}
