@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-flow: column nowrap;
+  padding: 
 }
 
 header {
@@ -11,9 +12,11 @@ header {
   flex-flow: default;
   justify-content: space-between;
   background-color: #1f2937;
-  padding: 24px;
+  padding: 25px 200px;
 }
-header ul {display:inherit;list-style-type:none;gap:10px;justify-content: center;}
+
+header ul {display:inherit;list-style-type:none;gap:15px;justify-content:center;}
+
 header .logo {
   font-size: 24px;
   color: #f9faf8;
@@ -35,6 +38,7 @@ header .nav-links {
 #hero {
   display: flex;
   background-color: #1f2937;
+  padding: 25px 200px;
 }
 
 #hero .main-text {
@@ -72,6 +76,7 @@ button {
   display: flex;
   color: #1f2937;
   flex-flow: column nowrap;
+  padding: 25px 200px;
 }
 
 #information .header {
@@ -87,7 +92,6 @@ button {
 #information .container {
   display: inherit;
   justify-content: space-around;
-  padding: 25px 200px;
 }
 
 #testimonial {
@@ -97,7 +101,7 @@ button {
   font-size: 36px;
   font-weight: 300;
   flex-flow: column wrap;
-  padding: 5% 25%;
+  padding: 25px 200px;
 }
 
 #testimonial .author {
@@ -109,5 +113,8 @@ button {
 
 footer {
   display: flex;
+  color: #f9faf8;
   background-color: #1f2937;
+  padding: 25px 200px;
+  justify-content: center;
 }
