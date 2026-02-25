@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --white:#f9faf8;
+  --black:#1f2937;
+  --grey:#e5e7eb;
+  --blue:#3882f6;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -10,7 +17,7 @@ header {
   display: flex;
   flex-flow: default;
   justify-content: space-between;
-  background-color: #1f2937;
+  background-color: var(--black);
   padding: 25px 200px;
 }
 
@@ -18,7 +25,7 @@ header ul {display:inherit;list-style-type:none;gap:15px;justify-content:center;
 
 header .logo {
   font-size: 24px;
-  color: #f9faf8;
+  color: var(--white);
   align-self:center;
   justify-content: center;
 }
@@ -26,7 +33,7 @@ header .logo {
 header .nav-links {
   a:link, a:visited {
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--grey);
     text-decoration: none;
   }
   a:hover, a:active {
@@ -36,71 +43,83 @@ header .nav-links {
 
 #hero {
   display: flex;
-  background-color: #1f2937;
+  background-color: var(--black);
   padding: 25px 200px;
   flex-flow: row wrap;
 }
-#hero img {
+
+#hero .right {
   display:inherit;
-  justify-content:center;
-  align-self: right;
+  justify-content:right;
   padding:25px 100px;
   flex-grow: 2;
 }
+
 #hero .main-text {
   display: inherit;
   font-size: 48px;
   font-weight: 900;
-  color: #f9faf8;
+  color: var(--white);
 }
 
 #hero .secondary-text {
   display: inherit;
   font-size: 18px;
-  color: #e5e7eb;
+  color: var(--grey);
 }
+
 #hero .container {
   display:inherit;
   flex-flow: column nowrap;
   width: 350px;
   align-items: center;
-  justify-content: left;
+  justify-content: space-evenly;
   flex-grow: 1;
 }
 
 button {
-  background-color: #3882f6;
-  color: #f9faf8;
-  margin: 10px;
-  padding: 15px;
+  display: inherit;
+  font-size: 16px;
+  background-color: var(--blue);
+  color: var(--white);
+  /* margin: 10px; */
+  padding: 15px 32px;
+  border-radius: 12px;
+}
+
+#hero button {
+  border: 2px solid var(--black);
+  justify-content: left;
+  align-self: flex-start;
 }
 
 #information .info {
   display: inherit;
   width: 200px;
-  gap: 36px;
+  gap: 8px;
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
 }
+
 #information img {
   display: inherit;
   width: 150px;
   height: 150px;
-  border: 3px solid #3882f6;
+  border: 3px solid var(--blue);
   border-radius: 5px;
 }
 
 #information {
   display: flex;
-  color: #1f2937;
+  color: var(--black);
   flex-flow: column nowrap;
   padding: 25px 200px;
 }
 
 #information .header {
   display: inherit;
-  color: #1f2937;
+  color: var(--black);
   font-size: 36px;
   font-weight: 900;
   text-align: center;
@@ -115,8 +134,8 @@ button {
 
 #testimonial {
   display: flex;
-  color:#1f2937;
-  background-color: #e5e7eb;
+  color:var(--black);
+  background-color: var(--grey);
   font-size: 36px;
   font-weight: 300;
   flex-flow: column wrap;
@@ -129,15 +148,49 @@ button {
   font-size: 36px;
   font-weight: 600;
 }
+
 #call-to-action {
-  background-color: #3882f6;
-  margin: 50px 200px;
-  color:#f9faf8;
+  display: flex;
+  background-color: var(--blue);
+  margin: 25px 200px;
+  padding: 25px;
+  color:var(--white);
+  justify-content: center;
+  align-items: space-between;
+  flex-flow: row nowrap;
 }
+
+#call-to-action .container {
+  display:inherit;
+  justify-content:center;
+  align-items:flex-start;
+  margin: 24px;
+  flex-flow: column nowrap;
+  flex-grow:1;
+}
+
+#call-to-action .header {
+  display: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: center;  
+}
+#call-to-action p {
+  display: inherit;
+  font-size: 18px;
+  color: var(--grey);
+}
+
+#call-to-action button {
+  border: 2px solid var(--white);
+  align-self: center;
+  flex-grow: 0;
+}
+
 footer {
   display: flex;
-  color: #f9faf8;
-  background-color: #1f2937;
+  color: var(--white);
+  background-color: var(--black);
   padding: 25px 200px;
   justify-content: center;
 }
